@@ -59,6 +59,7 @@ hi def link tgComment           Comment
 hi def link tgTodo              Todo
 hi def link tgBraces            Delimiter
 hi def link tgBlockType         Structure
+hi def link tgAttrType          Identifier
 hi def link tgValueBool         Boolean
 hi def link tgValueDec          Number
 hi def link tgValueHexaDec      Number
