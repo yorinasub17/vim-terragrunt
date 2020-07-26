@@ -40,7 +40,7 @@ syn region tgStringInterp  matchgroup=tgBraces start=/\${/ end=/}/ contained con
 syn region tgHereDocText   start=/<<-\?\z([a-z0-9A-Z]\+\)/ end=/^\s*\z1/ contains=tgStringInterp
 
 "" Functions.
-syn match tgFunction "[a-z0-9]\+(\@="
+syn match tgFunction "[a-z0-9_]\+(\@="
 
 """ HCL2
 syn keyword tgRepeat         for in
