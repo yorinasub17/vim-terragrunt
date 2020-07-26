@@ -25,7 +25,7 @@ syn keyword tgBlockType contained locals include remote_state dependencies depen
 syn keyword tgValueBool true false on off yes no
 
 " Terragrunt attributes, which are top level assignments of keywords
-syn match tgAttribute  /^\s*\zs\K\k*\ze\s\+\(\("\K\k*"\|\K\k*\)\s\+\)=/ contains=tgAttrType
+syn match tgAttribute  /^\s*\(\("\K\k*"\|\K\k*\)\s\+\)=/ contains=tgAttrType
 " TODO: autogenerate from terragrunt struct
 syn keyword tgAttrType contained terraform_binary terraform_version_constraint terragrunt_version_constraint inputs download_dir prevent_destroy skip iam_role
 
